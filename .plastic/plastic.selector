@@ -1,0 +1,3 @@
+repository "GGJ@tanawat15899@cloud"
+  path "/"
+    smartbranch "/main/Test Branch"
