@@ -26,19 +26,20 @@ public class MousePanCamera : MonoBehaviour
         float mouseX = Input.mousePosition.x / Screen.width;
         float panOffset = 0f;
         
-        if (mouseX < edgeTriggerThreshold) //
+        if (mouseX < edgeTriggerThreshold) //check left edge
         {
             panOffset = Mathf.Lerp(panOffset, -1f, (edgeTriggerThreshold - mouseX) / edgeTriggerThreshold);
         }
-        else if (mouseX > 1f - edgeTriggerThreshold)
+        else if (mouseX > 1f - edgeTriggerThreshold) //check right edge
         {
             panOffset = Mathf.Lerp(panOffset, 1f, (mouseX - (1f - edgeTriggerThreshold)) / edgeTriggerThreshold);
         }
-        else
+        else //middle
         {
             panOffset = Mathf.Lerp(panOffset, 0f, Time.deltaTime * panSpeed);
         }
-
+        
+        //Move
         targetPosition = initialPosition + Vector3.right * panOffset * panLimit;
         transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * panSpeed);
     }
