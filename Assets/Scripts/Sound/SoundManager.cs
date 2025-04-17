@@ -3,67 +3,113 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-enum SoundName
-{
-    
-}
 public class SoundManager : MonoBehaviour
 {
-    public static SoundManager instance { get; private set; }
+    [SerializeField] private Sound[] _sounds;
 
-    public AudioSource bgmSource;
-    public AudioSource sfxSource;
-    public Dictionary<string, AudioClip> audioClips = new Dictionary<string, AudioClip>();
-
-    public static event Action<string> OnPlaySFXEvent;
-    public static event Action<string, bool> OnPlayBGMEvent;
-    public static event Action OnStopMusicEvent;
+    
+    private static SoundManager _instance;
+    public static SoundManager instance => _instance;
+    
+    
+    public enum SoundName
+    {
+        handpanBGM,
+        handpanSFX,
+        
+    }
 
     private void Awake()
     {
-        if (instance == null)
+
+        if (_instance != null && _instance != this)
         {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-            LoadAudioClips();
+            Destroy(this.gameObject);
+            return;
         }
-        else
+        _instance = this;
+
+        foreach (Sound sound in _sounds)
         {
-            Destroy(gameObject);
+            sound.audioSource = gameObject.AddComponent<AudioSource>();
+            sound.audioSource.clip = sound.clip;
+            sound.audioSource.volume = sound.volume;
+            sound.audioSource.loop = sound.loop;
+            
         }
+        
+        _instance = this;
+        
+        
+        DontDestroyOnLoad(this.gameObject);
     }
 
-    private void LoadAudioClips()
-    {
-        AudioClip[] clips = Resources.LoadAll<AudioClip>("Audio");
-        foreach (AudioClip clip in clips)
-        {
-            audioClips.Add(clip.name, clip);
-        }
-    }
-
-    public static void PlaySFX(string clipName)
-    {
-        OnPlaySFXEvent?.Invoke(clipName);
-    }
-
-    public static void PlayBGM(string clipName, bool loop = true)
-    {
-        OnPlayBGMEvent?.Invoke(clipName,loop);
-    }
-
-    public static void StopMusic()
-    {
-        OnStopMusicEvent?.Invoke();
-    }
-
-    void HandleSFX(string clipName)
+    public void Update()
     {
         
     }
 
-    private void OnEnable()
+
+    public void Play(SoundName name)
     {
+
+        Sound sound = GetSound(name);
         
+        if (sound.audioSource == null)
+        {
+            Debug.LogError("Sound :" + name);
+            return;
+        }
+        
+        sound.audioSource.Play();
     }
+    
+    
+
+    private Sound GetSound(SoundName name)
+    {
+        return Array.Find(_sounds, s => s.soundName == name);
+    }
+
+
+
+    public void Stop(SoundName name)
+    {
+        Sound sound = GetSound(name);
+
+        if (sound.audioSource == null)
+        {
+            Debug.LogError("Sound :" + name);
+            return;
+        }
+
+        sound.audioSource.Stop();
+    }
+}
+
+[Serializable]public class Sound
+{
+    [SerializeField] private SoundManager.SoundName _soundName;
+    public SoundManager.SoundName soundName => _soundName;
+
+    public enum SoundType
+    {
+        BackgroundMusic,
+        SoundFX,
+    }
+
+    public SoundType soundType;
+
+    [SerializeField] private AudioClip _clip;
+    public AudioClip clip => _clip;
+
+    [Range(0f, 1f)]
+    [SerializeField] private float _volume = 1f;
+    public float volume => _volume;
+
+    [SerializeField] private bool _loop;
+    public bool loop => _loop;
+    
+    [HideInInspector]
+    public AudioSource audioSource;
 }
