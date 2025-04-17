@@ -35,13 +35,17 @@ public class UIManager : MonoBehaviour
     public event Action WhenStartedGame;
     public event Action<float> WhenBGMChanged;
     public event Action<float> WhenSFXChanged;
-
+    
     private bool _isInitialized;
-
+    
+    
+    
     private void Start()
     {
         // for test
         Init();
+        
+        
     }
 
     public void Init()
@@ -63,7 +67,7 @@ public class UIManager : MonoBehaviour
         _startButton.onClick.AddListener(OnStartGame);
         _optionButton.onClick.AddListener(_optionPanel.OpenPanel);
         _closeOptionButton.onClick.AddListener(_optionPanel.ClosePanel);
-
+        
         _isInitialized = true;
     }
 
@@ -86,5 +90,7 @@ public class UIManager : MonoBehaviour
         _titlePanel.ClosePanel();
         _optionPanel.ClosePanel();
         _gameplayPanel.OpenPanel();
+        
+        
     }
 }
