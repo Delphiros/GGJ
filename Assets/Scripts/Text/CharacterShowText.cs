@@ -2,23 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterShowText : MonoBehaviour
+public class CharacterShowText : MonoBehaviour, IInteract
 {
-    private Chatbox chatbox;
-    private bool isShow = true; //condition something to show
-    [SerializeField] private string message;
+    private CharacterChatBox chatbox;
+    [SerializeField] private string[] message;
+    public int messageIndex;
     
     void Start()
     {
-        chatbox = GetComponent<Chatbox>();
+        chatbox = GetComponent<CharacterChatBox>();
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    public void Interact()
     {
-        if (isShow && Input.GetKey(KeyCode.D))
+        Debug.Log("interact");
+        if (messageIndex < message.Length)
         {
-            chatbox.ShowMessage(message);
+            chatbox.Say(message[messageIndex]);
+            messageIndex++;
+        }
+        else
+        {
+            Debug.Log("index reset");
+            messageIndex = 0;
         }
     }
 }
