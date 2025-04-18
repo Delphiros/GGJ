@@ -287,6 +287,8 @@ GameObject:
   m_Component:
   - component: {fileID: 390967459}
   - component: {fileID: 390967458}
+  - component: {fileID: 390967461}
+  - component: {fileID: 390967460}
   m_Layer: 0
   m_Name: Scene1_000
   m_TagString: Untagged
@@ -361,6 +363,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &390967460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390967456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c24141442ea82449ba173034a72f153, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chatboxPrefab: {fileID: 2138808154617816701, guid: 8b262fe249e1b9746b4b88748e68cade, type: 3}
+  chatboxOffset: {x: 0, y: 2, z: 0}
+--- !u!114 &390967461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390967456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f71511dd76374a8d7740f75ba50ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: WOOOOOOOOWEEEEEEEEEEE~~~~!!!!!!
 --- !u!1 &441618002
 GameObject:
   m_ObjectHideFlags: 0
