@@ -23,5 +23,20 @@ public class SoundTest : MonoBehaviour
             SoundManager.instance.Play(SoundManager.SoundName.handpanBGM);
 
         }
+        if (Input.GetKey(KeyCode.E))
+        {
+            SoundManager.instance.Play(SoundManager.SoundName.wind);
+
+        }
+        if (Input.GetKey(KeyCode.R))
+        {
+            SoundManager.instance.Play(SoundManager.SoundName.bird);
+
+        }
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            SoundManager.instance.Play(SoundManager.SoundName.click);
+
+        }
     }
 }

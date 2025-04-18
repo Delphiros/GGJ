@@ -968,8 +968,32 @@ MonoBehaviour:
     _loop: 1
     audioSource: {fileID: 0}
   - _soundName: 1
-    soundType: 0
+    soundType: 1
     _clip: {fileID: 8300000, guid: 72b330b482706ed4ca58478a6692f17a, type: 3}
+    _volume: 1
+    _loop: 0
+    audioSource: {fileID: 0}
+  - _soundName: 2
+    soundType: 1
+    _clip: {fileID: 8300000, guid: 18c8d4686899021469621f697210762c, type: 3}
+    _volume: 1
+    _loop: 0
+    audioSource: {fileID: 0}
+  - _soundName: 3
+    soundType: 1
+    _clip: {fileID: 8300000, guid: 6d78e9526ac60174cb21f7dd824f2a79, type: 3}
+    _volume: 1
+    _loop: 0
+    audioSource: {fileID: 0}
+  - _soundName: 4
+    soundType: 1
+    _clip: {fileID: 8300000, guid: 046688274df8d594f9920456d52fabb9, type: 3}
+    _volume: 1
+    _loop: 0
+    audioSource: {fileID: 0}
+  - _soundName: 5
+    soundType: 1
+    _clip: {fileID: 8300000, guid: 8919296c311e3a64ca67c467f1a635f5, type: 3}
     _volume: 1
     _loop: 0
     audioSource: {fileID: 0}
