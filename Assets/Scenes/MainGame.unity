@@ -1336,7 +1336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 004f5226d0e6fcb4395feee2d004b651, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chatboxPrefabs: {fileID: 5889073081499002523, guid: e7096a5dc90808c40b4d8004af99dc7e, type: 3}
+  chatboxPrefabs: {fileID: 5889073081499002523, guid: b9b3e19685da16347b7f20d98083a75d, type: 3}
   displayDuration: 5
   chatboxOffset: {x: 0, y: 2, z: 0}
   LookAtCameraSpeed: 5
@@ -1810,7 +1810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 004f5226d0e6fcb4395feee2d004b651, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chatboxPrefabs: {fileID: 5889073081499002523, guid: e7096a5dc90808c40b4d8004af99dc7e, type: 3}
+  chatboxPrefabs: {fileID: 5889073081499002523, guid: 02ce043ac3aa5474c8c6552097e36bfd, type: 3}
   displayDuration: 5
   chatboxOffset: {x: 0, y: 2, z: 0}
   LookAtCameraSpeed: 5

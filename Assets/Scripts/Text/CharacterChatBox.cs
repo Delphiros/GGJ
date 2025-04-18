@@ -29,6 +29,7 @@ public class CharacterChatBox : MonoBehaviour
         mainCamera = Camera.main;
     }
 
+    //Call Text
     public void Say(string message)
     {
         messageQueue.Enqueue(message);
@@ -47,7 +48,7 @@ public class CharacterChatBox : MonoBehaviour
     }
 
 
-    public void GoToNextMessage()
+    /*public void GoToNextMessage()
     {
         if (isShowingMessage && messageQueue.Count > 0)
         {
@@ -62,8 +63,9 @@ public class CharacterChatBox : MonoBehaviour
             currentChatbox = null;
             chatboxText = null;
         }
-    }
-
+    }*/
+    
+    //ShowText
     IEnumerator ShowMessageSequence()
     {
         isShowingMessage = true;
@@ -134,6 +136,7 @@ public class CharacterChatBox : MonoBehaviour
         }
     }*/
 
+    //LookAtCamera
     private void LateUpdate()
     {
         if (currentChatbox != null && mainCamera != null)
