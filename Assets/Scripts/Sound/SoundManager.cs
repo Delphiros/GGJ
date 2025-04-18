@@ -16,6 +16,10 @@ public class SoundManager : MonoBehaviour
     {
         handpanBGM,
         handpanSFX,
+        button,
+        click,
+        wind,
+        bird,
         
     }
 
