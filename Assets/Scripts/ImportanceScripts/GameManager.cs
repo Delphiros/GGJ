@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI TrashCount;
     public int Level { get; private set; }
 
-
+    public bool IsChangeColor = false;
     
 
     private void Awake()

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8266797787593497444}
   - component: {fileID: 1263098058010828526}
   - component: {fileID: 7366027486183628960}
+  - component: {fileID: -2230716745861125238}
   m_Layer: 0
   m_Name: Bush_07
   m_TagString: Untagged
@@ -165,3 +166,17 @@ MonoBehaviour:
     m_RotationOrder: 4
   looping: 0
   loopingDelay: 0.5
+--- !u!114 &-2230716745861125238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6916183658715471693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae897e81d8cb70a4dbae54a0509e8389, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteColor: {fileID: 21300000, guid: 143435882e3f1274da62a46802c60c2c, type: 3}
+  spriteUnColor: {fileID: 21300000, guid: 9d5c530a664a34a49a52920e586b2b47, type: 3}
