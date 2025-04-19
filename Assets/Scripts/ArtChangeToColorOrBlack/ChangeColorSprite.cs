@@ -7,7 +7,8 @@ public class ChangeColorSprite : MonoBehaviour
     private SpriteRenderer _renderer;
     [SerializeField] private Sprite spriteColor;
     [SerializeField] private Sprite spriteUnColor;
-
+    
+    
     private void Awake()
     {
         _renderer = GetComponent<SpriteRenderer>();
@@ -38,5 +39,7 @@ public class ChangeColorSprite : MonoBehaviour
         }
 
     }
+    
+    
 
 }
