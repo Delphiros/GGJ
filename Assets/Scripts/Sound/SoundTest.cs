@@ -15,27 +15,27 @@ public class SoundTest : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Q))
         {
-            SoundManager.instance.Play(SoundManager.SoundName.handpanSFX);
+            SoundManager.instance.Play(SoundName.handpanSFX);
         }
 
         if (Input.GetKey(KeyCode.W))
         {
-            SoundManager.instance.Play(SoundManager.SoundName.handpanBGM);
+            SoundManager.instance.Play(SoundName.handpanBGM);
 
         }
         if (Input.GetKey(KeyCode.E))
         {
-            SoundManager.instance.Play(SoundManager.SoundName.wind);
+            SoundManager.instance.Play(SoundName.wind);
 
         }
         if (Input.GetKey(KeyCode.R))
         {
-            SoundManager.instance.Play(SoundManager.SoundName.bird);
+            SoundManager.instance.Play(SoundName.bird);
 
         }
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            SoundManager.instance.Play(SoundManager.SoundName.click);
+            SoundManager.instance.Play(SoundName.click);
 
         }
     }

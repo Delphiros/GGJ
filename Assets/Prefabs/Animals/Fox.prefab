@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1719423211961683170}
   - component: {fileID: 9034406837249421168}
   - component: {fileID: 90469570871303118}
+  - component: {fileID: 830074560754051415}
+  - component: {fileID: 5847755353718141103}
   m_Layer: 0
   m_Name: Fox
   m_TagString: Untagged
@@ -188,6 +190,44 @@ MonoBehaviour:
     m_RotationOrder: 4
   looping: 0
   loopingDelay: 0.5
+--- !u!114 &830074560754051415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6272788040320984988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 004f5226d0e6fcb4395feee2d004b651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chatboxPrefabs: {fileID: 5889073081499002523, guid: e7096a5dc90808c40b4d8004af99dc7e, type: 3}
+  displayDuration: 5
+  chatboxOffset: {x: 0, y: 2, z: 0}
+  LookAtCameraSpeed: 5
+  isShowingMessage: 0
+--- !u!114 &5847755353718141103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6272788040320984988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f71511dd76374a8d7740f75ba50ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message:
+  - What happened here?
+  - It was so beautiful before, what went wrong?
+  - Seriously, who littered all this?
+  endMessage:
+  - The beautiful colors are back!
+  - Thank you for helping to clean up all that trash.
+  - If you see any more trash, don't forget to touch it.
+  messageIndex: 0
 --- !u!1 &6831234808063567236
 GameObject:
   m_ObjectHideFlags: 0
