@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5242454916333681517}
   - component: {fileID: 2435225639742689403}
-  - component: {fileID: 7764525898442291180}
   - component: {fileID: 7280219579101239152}
+  - component: {fileID: -2322073255613334538}
+  - component: {fileID: 5914365756365077888}
   m_Layer: 0
   m_Name: Tree_Small_01
   m_TagString: Untagged
@@ -86,27 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &7764525898442291180
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5459111270456015720}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.64, y: 3.2499993, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7280219579101239152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,3 +145,38 @@ MonoBehaviour:
     m_RotationOrder: 4
   looping: 0
   loopingDelay: 0.5
+--- !u!114 &-2322073255613334538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5459111270456015720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae897e81d8cb70a4dbae54a0509e8389, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteColor: {fileID: 21300000, guid: f6af42395920c1b4eb3324a4e69b58e7, type: 3}
+  spriteUnColor: {fileID: 21300000, guid: a6dac64d334708e43972d60f6e7d0a9a, type: 3}
+--- !u!65 &5914365756365077888
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5459111270456015720}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.64, y: 3.2499998, z: 0.19999999}
+  m_Center: {x: 0, y: 0, z: 0}

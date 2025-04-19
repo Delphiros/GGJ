@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6677026363096375483}
   - component: {fileID: 5981655929992310137}
   - component: {fileID: 6626366536143479932}
+  - component: {fileID: -8923137433039019597}
   m_Layer: 0
   m_Name: Flower_03
   m_TagString: Untagged
@@ -165,3 +166,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.26, y: 0.39999992, z: 0.19999996}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-8923137433039019597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6747155667425798638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae897e81d8cb70a4dbae54a0509e8389, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteColor: {fileID: 21300000, guid: 00963b85814dfd54f8d1dbf2ef7fce80, type: 3}
+  spriteUnColor: {fileID: 21300000, guid: 95b2323816384354ab9307a89809f924, type: 3}

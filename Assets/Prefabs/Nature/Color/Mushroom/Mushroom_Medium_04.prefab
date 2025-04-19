@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 36391029177762989}
   - component: {fileID: 455635871616149932}
   - component: {fileID: 5213816333221860446}
+  - component: {fileID: 6131019651827102072}
   m_Layer: 0
   m_Name: Mushroom_Medium_04
   m_TagString: Untagged
@@ -165,3 +166,17 @@ MonoBehaviour:
     m_RotationOrder: 4
   looping: 0
   loopingDelay: 0.5
+--- !u!114 &6131019651827102072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6929108668251260250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae897e81d8cb70a4dbae54a0509e8389, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteColor: {fileID: 21300000, guid: c363d7a963ba14349b7c2d74ecef6c28, type: 3}
+  spriteUnColor: {fileID: 21300000, guid: 323c16e233ae2db468c9b3de1792bb1c, type: 3}

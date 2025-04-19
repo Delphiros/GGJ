@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8136359638804819105}
   - component: {fileID: 6438822932412443283}
   - component: {fileID: 2008913114052283500}
+  - component: {fileID: 4718374183527956981}
   m_Layer: 0
   m_Name: Mushroom_Large_03
   m_TagString: Untagged
@@ -165,3 +166,17 @@ MonoBehaviour:
     m_RotationOrder: 4
   looping: 0
   loopingDelay: 0.5
+--- !u!114 &4718374183527956981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135884178503742946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae897e81d8cb70a4dbae54a0509e8389, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteColor: {fileID: 21300000, guid: 9d7a4c09fdddf594480988f4b6548756, type: 3}
+  spriteUnColor: {fileID: 21300000, guid: bd208d5c327694b4984b97d7a36b2b9a, type: 3}
