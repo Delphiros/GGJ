@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class ChangeColorSprite : MonoBehaviour
@@ -7,6 +8,7 @@ public class ChangeColorSprite : MonoBehaviour
     private SpriteRenderer _renderer;
     [SerializeField] private Sprite spriteColor;
     [SerializeField] private Sprite spriteUnColor;
+    [SerializeField] private float durationFade = 1;
     
     
     private void Awake()
@@ -31,6 +33,7 @@ public class ChangeColorSprite : MonoBehaviour
     {
         if (IsColor)
         {
+            
             _renderer.sprite = spriteColor;
         }
         else
