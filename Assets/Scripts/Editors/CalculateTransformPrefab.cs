@@ -28,7 +28,7 @@ public class CalculateTransformPrefab : MonoBehaviour
 
         for (int i = 0; i < count; i++)
         {
-            Vector2 objectsPosition = new Vector2(_transforms[i].position.x, _transforms[i].position.y);
+            Vector2 objectsPosition = new Vector2(_transforms[i].position.x, 0);
             float distance = Vector2.Distance(Vector2.zero, objectsPosition);
             distance = _transforms[i].position.x < 0 ? -distance : distance;
 
@@ -43,7 +43,9 @@ public class CalculateTransformPrefab : MonoBehaviour
             // Position
             Vector3 offset = new Vector3(Mathf.Sin(radians), Mathf.Cos(radians), 0) * _radius;
             Vector3 position = _circleCenter.position + offset;
+            float positionY = _transforms[i].localPosition.y;
             _transforms[i].position = new Vector3(position.x, position.y, _transforms[i].position.z);
+            _transforms[i].localPosition += new Vector3(0, positionY, 0);
 
             // Rotation
             Vector3 currentRotation = _transforms[i].localEulerAngles;
