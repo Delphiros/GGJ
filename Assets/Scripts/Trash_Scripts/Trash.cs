@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class Trash : MonoBehaviour, IInteract
 {
+    private Animator _animator;
+
+    private void Start()
+    {
+        _animator = GetComponent<Animator>();
+    }
 
     public void Interact()
     {
@@ -11,6 +17,11 @@ public class Trash : MonoBehaviour, IInteract
         // Animation Before Delete
 
         Destroy(gameObject);
+    }
+
+    public void PlayHint()
+    {
+        _animator.enabled = true;
     }
 
 }
