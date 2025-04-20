@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6915134991884275259}
   - component: {fileID: 4173614483693015803}
   - component: {fileID: -5154414070436446845}
+  - component: {fileID: 209553422973925029}
   m_Layer: 0
   m_Name: Grass_Small_06
   m_TagString: Untagged
@@ -180,3 +181,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteColor: {fileID: 21300000, guid: e700dfd162ad6f6418833b05e1dfe113, type: 3}
   spriteUnColor: {fileID: 21300000, guid: e700dfd162ad6f6418833b05e1dfe113, type: 3}
+  durationFade: 1
+--- !u!114 &209553422973925029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4176314040031111296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8309adbd5178be4a8251d0328c63f3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: 14

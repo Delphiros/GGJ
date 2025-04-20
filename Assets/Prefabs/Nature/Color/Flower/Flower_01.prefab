@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6056816900831764596}
   - component: {fileID: 1223200770829446551}
   - component: {fileID: 1078828513941004701}
+  - component: {fileID: 5479578115071092387}
   m_Layer: 0
   m_Name: Flower_01
   m_TagString: Untagged
@@ -180,3 +181,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteColor: {fileID: 21300000, guid: 3926be3749140ab44a7792df744ca2d5, type: 3}
   spriteUnColor: {fileID: 21300000, guid: 78db39e01355b2848876e67329d22030, type: 3}
+  durationFade: 1
+--- !u!114 &5479578115071092387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2474318267731682984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8309adbd5178be4a8251d0328c63f3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: 14

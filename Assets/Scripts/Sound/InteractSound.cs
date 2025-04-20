@@ -7,11 +7,6 @@ public class InteractSound : MonoBehaviour,IInteract
 {
     [SerializeField] private SoundName sound;
 
-    void Start()
-    {
-        throw new NotImplementedException();
-    }
-
     public void Interact()
     {
         SoundManager.instance.Play(sound);

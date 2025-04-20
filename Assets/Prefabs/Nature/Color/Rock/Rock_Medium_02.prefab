@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3663668406458816141}
   - component: {fileID: 5251293384361842096}
   - component: {fileID: 1188379179759802120}
+  - component: {fileID: 3978769873279234560}
   m_Layer: 0
   m_Name: Rock_Medium_02
   m_TagString: Untagged
@@ -180,3 +181,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteColor: {fileID: 21300000, guid: 2e8212f168b504e44b4155b559a3ff89, type: 3}
   spriteUnColor: {fileID: 21300000, guid: e160da256ef480b4590aad7ce7d5f507, type: 3}
+  durationFade: 1
+--- !u!114 &3978769873279234560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264495539279255716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8309adbd5178be4a8251d0328c63f3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: 9

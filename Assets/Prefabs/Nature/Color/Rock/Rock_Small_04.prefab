@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8360168995785883998}
   - component: {fileID: 1650827697741209162}
   - component: {fileID: 3912307709955635422}
+  - component: {fileID: 5625809618673703229}
   m_Layer: 0
   m_Name: Rock_Small_04
   m_TagString: Untagged
@@ -180,3 +181,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteColor: {fileID: 21300000, guid: ae8265e9fb6a5484e9b2f824431129e6, type: 3}
   spriteUnColor: {fileID: 21300000, guid: f06d715c9e1ae58418ab4b64660f38b7, type: 3}
+  durationFade: 1
+--- !u!114 &5625809618673703229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8101876641356964655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8309adbd5178be4a8251d0328c63f3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: 9
