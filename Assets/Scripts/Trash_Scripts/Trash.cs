@@ -7,12 +7,20 @@ public class Trash : MonoBehaviour, IInteract
     [SerializeField]
     private Animator _animator;
 
+    public void Start()
+    {
+        if (_animator == null)
+        {
+            _animator = GetComponent<Animator>();
+        }
+    }
+
     public void Interact()
     {
-        GameManager.Instance.GetTrash();
+        GameManager.Instance.GetTrash(SoundName.Wink);
         // Animation Before Delete
 
-        Destroy(gameObject);
+        Destroy(gameObject, 0.5f);
     }
 
     public void PlayHint()

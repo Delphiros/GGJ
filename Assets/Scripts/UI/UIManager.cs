@@ -9,6 +9,9 @@ public class UIManager : MonoBehaviour
     private BasePanel _titlePanel;
 
     [SerializeField]
+    private BasePanel _endCreditPanel;
+
+    [SerializeField]
     private Button _startButton;
 
     public static UIManager Instance { get; private set; }
@@ -33,5 +36,10 @@ public class UIManager : MonoBehaviour
 
         Instance = this;
         _titlePanel.OpenPanel();
+    }
+
+    public void OpenEndGame()
+    {
+        _endCreditPanel.OpenPanel();
     }
 }
