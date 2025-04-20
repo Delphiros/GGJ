@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,9 +14,13 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI TrashCount;
     public int Level { get; private set; }
 
+    [HideInInspector]
     public bool IsChangeColor = false;
 
-    [SerializeField] List<Trash> _listAllTrashHere = new List<Trash>();
+    [SerializeField] 
+    private SoundName _hintSound;
+
+    [SerializeField] List<CheckTrash> _listAllTrashHere = new List<CheckTrash>();
     private int numListTrashForHint = 0;
 
     private void Awake()
@@ -47,10 +52,24 @@ public class GameManager : MonoBehaviour
         MaxTrashCollected = ListLevelAmountMax[numLevel-1];
     }
 
-    public void GetTrash()
+    public void GetTrash(SoundName sound)
     {
+        SoundManager.instance.Play(sound);
+
         currentTrashCollected++;
-        TrashCount.text = currentTrashCollected + "/3";
+        TrashCount.text = currentTrashCollected + "/" + MaxTrashCollected;
+
+        if (currentTrashCollected >= MaxTrashCollected)
+        {
+            GameEnded();
+        }
+    }
+
+    private void GameEnded()
+    {
+        IsChangeColor = true;
+        SoundManager.instance.Play(SoundName.handpanBGM);
+        UIManager.Instance.OpenEndGame();
     }
 
     public void UpdateNumberTrashCount(string text)
@@ -67,6 +86,7 @@ public class GameManager : MonoBehaviour
         }
         else Debug.LogWarning("That's All Trash Have");
 
+        SoundManager.instance.Play(_hintSound);
     }
 
     #endregion

@@ -210,8 +210,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4731296461507122313}
-  - component: {fileID: 1077983120916749155}
   - component: {fileID: 7369671800967765396}
+  - component: {fileID: 8532678585302675902}
   m_Layer: 0
   m_Name: Mob
   m_TagString: Untagged
@@ -235,19 +235,6 @@ Transform:
   - {fileID: 9096439176887602670}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
---- !u!114 &1077983120916749155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9154993541199990938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7ad8765f32dbd94bab88c8a49ff8736, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _animator: {fileID: 1017316897929001476}
 --- !u!114 &7369671800967765396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,4 +247,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8309adbd5178be4a8251d0328c63f3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  sound: 11
+--- !u!114 &8532678585302675902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9154993541199990938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b733de2e3bb8774c84fc58cfbb9b604, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
