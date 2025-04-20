@@ -5,7 +5,7 @@ using UnityEngine;
 public class ClickInteract : MonoBehaviour
 {
     RaycastHit hitInfo;
-    //IInteract interact;
+    //[SerializeField] private GameObject Effect;
     private void Update()
     {
 
@@ -13,6 +13,8 @@ public class ClickInteract : MonoBehaviour
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit[] hits = Physics.RaycastAll(ray);
+            /*Vector3 mouseWP = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Instantiate(Effect, mouseWP, Quaternion.identity);*/
 
             if (hits.Length > 0)
             {

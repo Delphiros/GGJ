@@ -23,6 +23,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] List<CheckTrash> _listAllTrashHere = new List<CheckTrash>();
     private int numListTrashForHint = 0;
 
+    [SerializeField] private Animator _animatorUIFade;
+    public GameObject _credit;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -52,13 +55,13 @@ public class GameManager : MonoBehaviour
         MaxTrashCollected = ListLevelAmountMax[numLevel-1];
     }
 
-    public void GetTrash(SoundName sound)
+    public void GetTrash(SoundName sound,CheckTrash removeIt)
     {
         SoundManager.instance.Play(sound);
 
         currentTrashCollected++;
         TrashCount.text = currentTrashCollected + "/" + MaxTrashCollected;
-
+        _listAllTrashHere.Remove(removeIt);
         if (currentTrashCollected >= MaxTrashCollected)
         {
             GameEnded();
@@ -67,7 +70,8 @@ public class GameManager : MonoBehaviour
 
     private void GameEnded()
     {
-        IsChangeColor = true;
+        //IsChangeColor = true;
+        _animatorUIFade.enabled = true;
         SoundManager.instance.Play(SoundName.handpanBGM);
         UIManager.Instance.OpenEndGame();
     }
@@ -84,8 +88,11 @@ public class GameManager : MonoBehaviour
             _listAllTrashHere[numListTrashForHint].PlayHint();
             numListTrashForHint++;
         }
-        else Debug.LogWarning("That's All Trash Have");
-
+        else
+        {
+            Debug.LogWarning("That's All Trash Have");
+            numListTrashForHint = 0;
+        }
         SoundManager.instance.Play(_hintSound);
     }
 

@@ -8,7 +8,8 @@ public class CheckTrash : MonoBehaviour
 
     private void Awake()
     {
-        _trash = GetComponentInChildren<Trash>();    
+        _trash = GetComponentInChildren<Trash>();
+        _trash.InputStart(this);
     }
 
     public void PlayHint()

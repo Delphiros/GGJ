@@ -1,12 +1,12 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!28 &-6161361292952060982
+--- !u!28 &-3459372199121872359
 Texture2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Ggj_font-Regular SDF Atlas
+  m_Name: Ggj_font-Regular_Custom Atlas
   m_ImageContentsHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
@@ -58,11 +58,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: Ggj_font-Regular SDF
+  m_Name: Ggj_font-Regular_Custom
   m_EditorClassIdentifier: 
-  hashCode: 1652660192
-  material: {fileID: 2157350785489144502}
-  materialHashCode: 1084198464
+  hashCode: 1277046269
+  material: {fileID: 921081422167914379}
+  materialHashCode: 683861053
   m_Version: 1.1.0
   m_SourceFontFileGUID: e2df0a03173069940b4b108a0485ab08
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: e2df0a03173069940b4b108a0485ab08, type: 3}
@@ -1917,7 +1917,7 @@ MonoBehaviour:
     m_GlyphIndex: 99
     m_Scale: 1
   m_AtlasTextures:
-  - {fileID: -6161361292952060982}
+  - {fileID: -3459372199121872359}
   m_AtlasTextureIndex: 0
   m_IsMultiAtlasTexturesEnabled: 0
   m_ClearDynamicDataOnBuild: 0
@@ -2662,9 +2662,9 @@ MonoBehaviour:
     packingMode: 0
     atlasWidth: 512
     atlasHeight: 512
-    characterSetSelectionMode: 0
-    characterSequence: 32 - 126, 160, 8203, 8230, 9633
-    referencedFontAssetGUID: 
+    characterSetSelectionMode: 7
+    characterSequence: " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~\_"
+    referencedFontAssetGUID: d2316f933c6f2eb4fb912f255cd93bb4
     referencedTextAssetGUID: 
     fontStyle: 0
     fontStyleModifier: 0
@@ -2698,14 +2698,14 @@ MonoBehaviour:
   boldSpacing: 7
   italicStyle: 35
   tabSize: 10
---- !u!21 &2157350785489144502
+--- !u!21 &921081422167914379
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Ggj_font-Regular SDF Material
+  m_Name: Ggj_font-Regular_Custom Material
   m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -2734,7 +2734,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: -6161361292952060982}
+        m_Texture: {fileID: -3459372199121872359}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OutlineTex:
