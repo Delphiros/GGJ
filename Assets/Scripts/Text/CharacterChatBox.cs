@@ -68,7 +68,7 @@ public class CharacterChatBox : MonoBehaviour
     IEnumerator ShowMessageSequence()
     {
         isShowingMessage = true;
-
+        
         if (currentChatbox == null && chatboxPrefabs != null)
         {
             currentChatbox = Instantiate(chatboxPrefabs, transform.position + chatboxOffset, quaternion.identity);
@@ -79,7 +79,7 @@ public class CharacterChatBox : MonoBehaviour
             }
         }
         
-
+        
         while (messageQueue.Count > 0 && chatboxText != null)
         {
             string messageShow = messageQueue.Dequeue();
