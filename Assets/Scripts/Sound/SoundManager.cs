@@ -26,7 +26,7 @@ public enum SoundName
     Bone,
     Wheel,
     Guitar,
-    
+    Wink,
 }
 
 public class SoundManager : MonoBehaviour

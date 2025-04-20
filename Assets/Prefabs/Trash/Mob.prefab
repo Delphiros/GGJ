@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -6479682887291543179}
   - component: {fileID: 4279832275295685980}
   - component: {fileID: 4845740110446589909}
+  - component: {fileID: -7912692880582809810}
   m_Layer: 0
   m_Name: Mob
   m_TagString: Untagged
@@ -200,3 +201,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2.9999995, z: 0.19999997}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-7912692880582809810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7954155137054869714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8309adbd5178be4a8251d0328c63f3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: 0
