@@ -16,10 +16,20 @@ public class ClickInteract : MonoBehaviour
             {
                 Debug.Log("Hit" + hitInfo.collider.name);
 
-                if (hitInfo.collider.TryGetComponent(out IInteract _interact))
+                IInteract[] interacts = hitInfo.collider.GetComponents<IInteract>();
+
+                if (interacts != null && interacts.Length > 0)
+                {
+                    foreach (IInteract interactable in interacts)
+                    {
+                        interactable.Interact();
+                    }
+                }
+                
+                /*if (hitInfo.collider.TryGetComponent(out IInteract _interact))
                 {
                     _interact.Interact();
-                }
+                }*/
 
             }
 

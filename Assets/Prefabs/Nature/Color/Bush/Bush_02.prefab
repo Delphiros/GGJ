@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5398924269369574584}
   - component: {fileID: 3504278425742016328}
   - component: {fileID: -1307139582514204814}
+  - component: {fileID: -8899067561465364081}
   m_Layer: 0
   m_Name: Bush_02
   m_TagString: Untagged
@@ -180,3 +181,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteColor: {fileID: 21300000, guid: 3e406d7491f375b41b1ef1e22ae12d41, type: 3}
   spriteUnColor: {fileID: 21300000, guid: 7b6c6917812ed0643aceb6c7f67e2071, type: 3}
+--- !u!114 &-8899067561465364081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6640543281521451498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8309adbd5178be4a8251d0328c63f3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: 6

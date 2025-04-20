@@ -3,6 +3,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum SoundName
+{
+    handpanBGM,
+    handpanSFX,
+    button,
+    click,
+    wind,
+    bird,
+    bush,
+    MetalTrash,
+    PlasticTrash,
+    Stone1,
+    Stone2,
+    Toy1,
+    Toy2,
+    Water,
+    Tree,
+    TrashMoneyPaper,
+    PotionBubble,
+    Battery,
+    Bone,
+    Wheel,
+    Guitar,
+    
+}
+
 public class SoundManager : MonoBehaviour
 {
     [SerializeField] private Sound[] _sounds;
@@ -11,17 +37,6 @@ public class SoundManager : MonoBehaviour
     private static SoundManager _instance;
     public static SoundManager instance => _instance;
     
-    
-    public enum SoundName
-    {
-        handpanBGM,
-        handpanSFX,
-        button,
-        click,
-        wind,
-        bird,
-        
-    }
 
     private void Awake()
     {
@@ -93,8 +108,8 @@ public class SoundManager : MonoBehaviour
 
 [Serializable]public class Sound
 {
-    [SerializeField] private SoundManager.SoundName _soundName;
-    public SoundManager.SoundName soundName => _soundName;
+    [SerializeField] private SoundName _soundName;
+    public SoundName soundName => _soundName;
 
     public enum SoundType
     {

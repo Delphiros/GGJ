@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1617755384288051284}
   - component: {fileID: 2169507676991416185}
   - component: {fileID: 4189681007594421455}
+  - component: {fileID: -3275755541299216541}
   m_Layer: 0
   m_Name: Tree_Tall_02
   m_TagString: Untagged
@@ -180,3 +181,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteColor: {fileID: 21300000, guid: 6e6bc83d61c6de14981d10fc0dd4c9d9, type: 3}
   spriteUnColor: {fileID: 21300000, guid: e0a0351f1e2a41c45b153c8007db095b, type: 3}
+--- !u!114 &-3275755541299216541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3621931001683966741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8309adbd5178be4a8251d0328c63f3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: 14

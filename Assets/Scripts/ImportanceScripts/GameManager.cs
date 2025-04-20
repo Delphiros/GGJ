@@ -14,7 +14,9 @@ public class GameManager : MonoBehaviour
     public int Level { get; private set; }
 
     public bool IsChangeColor = false;
-    
+
+    [SerializeField] List<Trash> _listAllTrashHere = new List<Trash>();
+    private int numListTrashForHint = 0;
 
     private void Awake()
     {
@@ -32,6 +34,9 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         Level = 1;
+
+        MaxTrashCollected = _listAllTrashHere.Count;
+        TrashCount.text = currentTrashCollected + "/" + MaxTrashCollected;
     }
 
 
@@ -53,6 +58,16 @@ public class GameManager : MonoBehaviour
         TrashCount.text = text;
     }
     
+    public void PlayHint()
+    {
+        if (numListTrashForHint < _listAllTrashHere.Count)
+        {
+            _listAllTrashHere[numListTrashForHint].PlayHint();
+            numListTrashForHint++;
+        }
+        else Debug.LogWarning("That's All Trash Have");
+
+    }
 
     #endregion
 }
