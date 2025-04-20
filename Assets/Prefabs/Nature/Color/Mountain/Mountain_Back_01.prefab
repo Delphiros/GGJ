@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 432120993797369375}
   - component: {fileID: 533927321510838138}
   - component: {fileID: 1340445758340270858}
+  - component: {fileID: -1116886922854355215}
   m_Layer: 0
   m_Name: Mountain_Back_01
   m_TagString: Untagged
@@ -159,6 +160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteColor: {fileID: 21300000, guid: 924b52fb8df6e5441b75c39b5663c382, type: 3}
   spriteUnColor: {fileID: 21300000, guid: 965e2860a7a7f0d40817034c5f6abb3b, type: 3}
+  durationFade: 1
 --- !u!65 &1340445758340270858
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -180,3 +182,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 13.13, y: 7.91, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-1116886922854355215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4743296079287865953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8309adbd5178be4a8251d0328c63f3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: 14

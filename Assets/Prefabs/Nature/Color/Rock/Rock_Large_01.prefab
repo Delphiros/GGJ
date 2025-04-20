@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1194551707523472072}
   - component: {fileID: 2063928390919910150}
   - component: {fileID: -9032640843911015300}
+  - component: {fileID: -981575682831400242}
   m_Layer: 0
   m_Name: Rock_Large_01
   m_TagString: Untagged
@@ -180,3 +181,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteColor: {fileID: 21300000, guid: 0ab4721cd6cdebb4e8187565f38856e3, type: 3}
   spriteUnColor: {fileID: 21300000, guid: 14aae926c90c5c84d843d0b2201dd20d, type: 3}
+  durationFade: 1
+--- !u!114 &-981575682831400242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8061959720644935116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8309adbd5178be4a8251d0328c63f3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: 9

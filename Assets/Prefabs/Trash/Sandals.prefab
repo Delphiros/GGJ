@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7236658645047998539}
+  - component: {fileID: 807936101239746238}
+  - component: {fileID: -5913074162652656334}
   m_Layer: 0
   m_Name: Sandals
   m_TagString: Untagged
@@ -32,6 +34,32 @@ Transform:
   - {fileID: 7419628862039189398}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
+--- !u!114 &807936101239746238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2174888125776635303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7ad8765f32dbd94bab88c8a49ff8736, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 7922246689218435868}
+--- !u!114 &-5913074162652656334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2174888125776635303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8309adbd5178be4a8251d0328c63f3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: 0
 --- !u!1 &5951305952168104531
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,6 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7ad8765f32dbd94bab88c8a49ff8736, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animator: {fileID: 0}
 --- !u!114 &6538728268912849671
 MonoBehaviour:
   m_ObjectHideFlags: 0

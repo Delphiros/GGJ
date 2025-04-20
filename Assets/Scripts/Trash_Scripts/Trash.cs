@@ -4,12 +4,8 @@ using UnityEngine;
 
 public class Trash : MonoBehaviour, IInteract
 {
+    [SerializeField]
     private Animator _animator;
-
-    private void Start()
-    {
-        _animator = GetComponent<Animator>();
-    }
 
     public void Interact()
     {
