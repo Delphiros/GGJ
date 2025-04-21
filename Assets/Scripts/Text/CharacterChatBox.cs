@@ -43,6 +43,7 @@ public class CharacterChatBox : MonoBehaviour
         if (isShowingMessage && Input.GetMouseButtonDown(0))
         {
             skipToNext = true;
+            
         }
     }
 
@@ -67,8 +68,9 @@ public class CharacterChatBox : MonoBehaviour
     //ShowText
     IEnumerator ShowMessageSequence()
     {
-        isShowingMessage = true;
-        
+
+        //isShowingMessage = true;
+
         if (currentChatbox == null && chatboxPrefabs != null)
         {
             currentChatbox = Instantiate(chatboxPrefabs, transform.position + chatboxOffset, quaternion.identity);
@@ -78,6 +80,8 @@ public class CharacterChatBox : MonoBehaviour
                 Debug.Log("ShowMessageSequence chatboxtext NULL");
             }
         }
+        yield return new WaitForSeconds(0.05f);
+        isShowingMessage = true;
         
         
         while (messageQueue.Count > 0 && chatboxText != null)

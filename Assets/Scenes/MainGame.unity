@@ -1288,6 +1288,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -1.53
       objectReference: {fileID: 0}
+    - target: {fileID: 3067079274813777145, guid: 2c55cf6ca6949ea4daf183bca6f48b25, type: 3}
+      propertyPath: chatboxPrefabs
+      value: 
+      objectReference: {fileID: 5889073081499002523, guid: e7096a5dc90808c40b4d8004af99dc7e, type: 3}
+    - target: {fileID: 3067079274813777145, guid: 2c55cf6ca6949ea4daf183bca6f48b25, type: 3}
+      propertyPath: isShowingMessage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579762159320831056, guid: 2c55cf6ca6949ea4daf183bca6f48b25, type: 3}
+      propertyPath: message.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579762159320831056, guid: 2c55cf6ca6949ea4daf183bca6f48b25, type: 3}
+      propertyPath: message.Array.data[3]
+      value: Hey Kiddo! Help me collect all "Trash" here.
+      objectReference: {fileID: 0}
     - target: {fileID: 6832032658129921406, guid: 2c55cf6ca6949ea4daf183bca6f48b25, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.22
@@ -1406,6 +1422,7 @@ GameObject:
   - component: {fileID: 459689075}
   - component: {fileID: 459689074}
   - component: {fileID: 459689073}
+  - component: {fileID: 459689076}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1474,6 +1491,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &459689076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459689072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ed8e59211b30d741af76edecbb97047, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorOnClickUp: {fileID: 2800000, guid: 2b04209a18eb24c479646bf6cf22e157, type: 3}
+  cursorOnClickDown: {fileID: 2800000, guid: d38e51cf80e4f7f4f9b5f26652312835, type: 3}
 --- !u!4 &461591743 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2414344409599838596, guid: 2c55cf6ca6949ea4daf183bca6f48b25, type: 3}
@@ -2243,7 +2274,7 @@ MonoBehaviour:
 
 
     Thankyou
-    for playing out Game!
+    for playing our Game!
 
     ;3'
   m_isRightToLeft: 0
