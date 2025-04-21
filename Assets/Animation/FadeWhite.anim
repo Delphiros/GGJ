@@ -406,7 +406,14 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 3.9166667
+  - time: 2.0166667
+    functionName: ShowAnimalEndd
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 3.3666666
     functionName: SlideUpCredit
     data: 
     objectReferenceParameter: {fileID: 0}
